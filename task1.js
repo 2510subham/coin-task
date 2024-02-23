@@ -5,8 +5,7 @@ const app = express();
 const port = 3000;
 const modelData = require('./model');
 const cron = require('node-cron')
-// const { MongoClient } = require('mongodb');
-const { mongoose, Connection, Mongoose } = require('mongoose');
+const { mongoose } = require('mongoose');
 app.use(bodyParser.json());
 
 const connection = async () => {
